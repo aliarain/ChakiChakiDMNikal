@@ -30,7 +30,7 @@ const Home = () => {
   };
 
   const OnChangedPerson = (e) => {
-    setReasonInput(e.target.value);
+    setPersonInput(e.target.value);
   };
 
   return (
@@ -62,7 +62,7 @@ const Home = () => {
             value={reasonInput}
             onChange={OnChangedReason}
           />
-          <div className="prompt-box">
+          <div className="container">
             <a
               className={
                 isGenerating ? "generate-button loading" : "generate-button"
