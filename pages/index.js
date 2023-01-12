@@ -8,7 +8,7 @@ const Home = () => {
   const [apiOutput, setApioutput] = useState("");
   const [isGenerating, setisGenerating] = useState(false);
 
-  callGenerateEndpoint = async () => {
+  const callGenerateEndpoint = async () => {
     setisGenerating(true);
     console.log("Chaki Se DM aa raha he......");
     const res = await fetch("api/write", {
@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <div className="root">
       <Head>
-        <title>LinkldinDMWriter - ChakiChaki</title>
+        <title>Chaki Chaki- Linkedin Cold Messge Writer (GPT Based)</title>
       </Head>
       <div className="container">
         <div className="header">
